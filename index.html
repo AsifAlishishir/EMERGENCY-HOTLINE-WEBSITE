@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="max-w-[1920px] mx-auto">
+    <header class="max-w-[1920px] mx-auto top-0 bg-white sticky z-50 shadow-md">
       <nav>
         <div class="flex justify-between items-center px-[60px] py-6">
           <div class="logo-part">
@@ -41,7 +41,9 @@
             <div
               class="heart-part flex items-center gap-[10px] py-3 px-7 rounded-[50px] bg-[#41ff6b1a]"
             >
-              <span class="inter font-black text-[#000000]">0</span>
+              <span id="heart-total" class="inter font-black text-[#000000]"
+                >0</span
+              >
               <img class="h-[30px]" src="./assets/heart.png" alt="" srcset="" />
             </div>
 
@@ -55,7 +57,7 @@
             <div
               class="copy-part flex items-center gap-[10px] inter font-semibold text-white bg-[#00A63E] py-4 px-7 rounded-[50px]"
             >
-              <span>0</span>
+              <span id="copy-total">0</span>
               <p>Copy</p>
             </div>
           </div>
@@ -80,12 +82,12 @@
         class="card-and-call-history-section bg-[#F5FFF6] pt-12 px-[60px] pb-20 flex gap-[30px]"
       >
         <div class="card-container w-[80%] grid grid-cols-3 gap-[30px]">
-          <div class="p-8 bg-white shadow-md card">
+          <div class="p-8 bg-white shadow-md cursor-pointer card">
             <div class="flex items-center justify-between card-image">
               <div class="p-3 rounded-2xl bg-[#FFE3E2]">
                 <img class="h-8" src="./assets/emergency.png" alt="" />
               </div>
-              <i class="fa-regular fa-heart text-[#5C5C5C]"></i>
+              <i class="fa-regular fa-heart text-[#5C5C5C] small-heart-btn"></i>
             </div>
             <h2
               class="hind-madurai text-[#111111] text-[24px] font-bold mt-4 mb-[2px]"
@@ -105,7 +107,7 @@
             </p>
 
             <div class="flex items-center gap-2 text-center buttons">
-              <button class="btn text-[#5C5C5C] roboto p-4 w-1/2">
+              <button class="btn text-[#5C5C5C] roboto p-4 w-1/2 copy-button">
                 <span class="mr-[6px]"><i class="fa-regular fa-copy"></i></span>
                 Copy
               </button>
@@ -115,12 +117,12 @@
               </button>
             </div>
           </div>
-          <div class="p-8 bg-white shadow-md card">
+          <div class="p-8 bg-white shadow-md cursor-pointer card">
             <div class="flex items-center justify-between card-image">
               <div class="p-3 rounded-2xl bg-[#FFE3E2]">
                 <img class="h-8" src="./assets/police.png" alt="" />
               </div>
-              <i class="fa-regular fa-heart text-[#5C5C5C]"></i>
+              <i class="fa-regular fa-heart text-[#5C5C5C] small-heart-btn"></i>
             </div>
             <h2
               class="hind-madurai text-[#111111] text-[24px] font-bold mt-4 mb-[2px]"
@@ -138,7 +140,7 @@
             </p>
 
             <div class="flex items-center gap-2 text-center buttons">
-              <button class="btn text-[#5C5C5C] roboto p-4 w-1/2">
+              <button class="btn text-[#5C5C5C] roboto p-4 w-1/2 copy-button">
                 <span class="mr-[6px]"><i class="fa-regular fa-copy"></i></span>
                 Copy
               </button>
@@ -148,12 +150,12 @@
               </button>
             </div>
           </div>
-          <div class="p-8 bg-white shadow-md card">
+          <div class="p-8 bg-white shadow-md cursor-pointer card">
             <div class="flex items-center justify-between card-image">
               <div class="p-3 rounded-2xl bg-[#FFE3E2]">
                 <img class="h-8" src="./assets/fire-service.png" alt="" />
               </div>
-              <i class="fa-regular fa-heart text-[#5C5C5C]"></i>
+              <i class="fa-regular fa-heart text-[#5C5C5C] small-heart-btn"></i>
             </div>
             <h2
               class="hind-madurai text-[#111111] text-[24px] font-bold mt-4 mb-[2px]"
@@ -171,7 +173,7 @@
             </p>
 
             <div class="flex items-center gap-2 text-center buttons">
-              <button class="btn text-[#5C5C5C] roboto p-4 w-1/2">
+              <button class="btn text-[#5C5C5C] roboto p-4 w-1/2 copy-button">
                 <span class="mr-[6px]"><i class="fa-regular fa-copy"></i></span>
                 Copy
               </button>
@@ -181,12 +183,12 @@
               </button>
             </div>
           </div>
-          <div class="p-8 bg-white shadow-md card">
+          <div class="p-8 bg-white shadow-md cursor-pointer card">
             <div class="flex items-center justify-between card-image">
               <div class="p-3 rounded-2xl bg-[#FFE3E2]">
                 <img class="h-8" src="./assets/ambulance.png" alt="" />
               </div>
-              <i class="fa-regular fa-heart text-[#5C5C5C]"></i>
+              <i class="fa-regular fa-heart text-[#5C5C5C] small-heart-btn"></i>
             </div>
             <h2
               class="hind-madurai text-[#111111] text-[24px] font-bold mt-4 mb-[2px]"
@@ -204,7 +206,7 @@
             </p>
 
             <div class="flex items-center gap-2 text-center buttons">
-              <button class="btn text-[#5C5C5C] roboto p-4 w-1/2">
+              <button class="btn text-[#5C5C5C] roboto p-4 w-1/2 copy-button">
                 <span class="mr-[6px]"><i class="fa-regular fa-copy"></i></span>
                 Copy
               </button>
@@ -214,12 +216,12 @@
               </button>
             </div>
           </div>
-          <div class="p-8 bg-white shadow-md card">
+          <div class="p-8 bg-white shadow-md cursor-pointer card">
             <div class="flex items-center justify-between card-image">
               <div class="p-3 rounded-2xl bg-[#FFE3E2]">
                 <img class="h-8" src="./assets/emergency.png" alt="" />
               </div>
-              <i class="fa-regular fa-heart text-[#5C5C5C]"></i>
+              <i class="fa-regular fa-heart text-[#5C5C5C] small-heart-btn"></i>
             </div>
             <h2
               class="hind-madurai text-[#111111] text-[24px] font-bold mt-4 mb-[2px]"
@@ -239,7 +241,7 @@
             </p>
 
             <div class="flex items-center gap-2 text-center buttons">
-              <button class="btn text-[#5C5C5C] roboto p-4 w-1/2">
+              <button class="btn text-[#5C5C5C] roboto p-4 w-1/2 copy-button">
                 <span class="mr-[6px]"><i class="fa-regular fa-copy"></i></span>
                 Copy
               </button>
@@ -249,12 +251,12 @@
               </button>
             </div>
           </div>
-          <div class="p-8 bg-white shadow-md card">
+          <div class="p-8 bg-white shadow-md cursor-pointer card">
             <div class="flex items-center justify-between card-image">
               <div class="p-3 rounded-2xl bg-[#FFE3E2]">
                 <img class="h-8" src="./assets/emergency.png" alt="" />
               </div>
-              <i class="fa-regular fa-heart text-[#5C5C5C]"></i>
+              <i class="fa-regular fa-heart text-[#5C5C5C] small-heart-btn"></i>
             </div>
             <h2
               class="hind-madurai text-[#111111] text-[24px] font-bold mt-4 mb-[2px]"
@@ -274,7 +276,7 @@
             </p>
 
             <div class="flex items-center gap-2 text-center buttons">
-              <button class="btn text-[#5C5C5C] roboto p-4 w-1/2">
+              <button class="btn text-[#5C5C5C] roboto p-4 w-1/2 copy-button">
                 <span class="mr-[6px]"><i class="fa-regular fa-copy"></i></span>
                 Copy
               </button>
@@ -284,12 +286,12 @@
               </button>
             </div>
           </div>
-          <div class="p-8 bg-white shadow-md card">
+          <div class="p-8 bg-white shadow-md cursor-pointer card">
             <div class="flex items-center justify-between card-image">
               <div class="p-3 rounded-2xl bg-[#FFE3E2]">
                 <img class="h-8" src="./assets/emergency.png" alt="" />
               </div>
-              <i class="fa-regular fa-heart text-[#5C5C5C]"></i>
+              <i class="fa-regular fa-heart text-[#5C5C5C] small-heart-btn"></i>
             </div>
             <h2
               class="hind-madurai text-[#111111] text-[24px] font-bold mt-4 mb-[2px]"
@@ -309,7 +311,7 @@
             </p>
 
             <div class="flex items-center gap-2 text-center buttons">
-              <button class="btn text-[#5C5C5C] roboto p-4 w-1/2">
+              <button class="btn text-[#5C5C5C] roboto p-4 w-1/2 copy-button">
                 <span class="mr-[6px]"><i class="fa-regular fa-copy"></i></span>
                 Copy
               </button>
@@ -319,12 +321,12 @@
               </button>
             </div>
           </div>
-          <div class="p-8 bg-white shadow-md card">
+          <div class="p-8 bg-white shadow-md cursor-pointer card">
             <div class="flex items-center justify-between card-image">
               <div class="p-3 rounded-2xl bg-[#FFE3E2]">
                 <img class="h-8" src="./assets/brac.png" alt="" />
               </div>
-              <i class="fa-regular fa-heart text-[#5C5C5C]"></i>
+              <i class="fa-regular fa-heart text-[#5C5C5C] small-heart-btn"></i>
             </div>
             <h2
               class="hind-madurai text-[#111111] text-[24px] font-bold mt-4 mb-[2px]"
@@ -342,7 +344,7 @@
             </p>
 
             <div class="flex items-center gap-2 text-center buttons">
-              <button class="btn text-[#5C5C5C] roboto p-4 w-1/2">
+              <button class="btn text-[#5C5C5C] roboto p-4 w-1/2 copy-button">
                 <span class="mr-[6px]"><i class="fa-regular fa-copy"></i></span>
                 Copy
               </button>
@@ -352,12 +354,12 @@
               </button>
             </div>
           </div>
-          <div class="p-8 bg-white shadow-md card">
+          <div class="p-8 bg-white shadow-md cursor-pointer card">
             <div class="flex items-center justify-between card-image">
               <div class="p-3 rounded-2xl bg-[#FFE3E2]">
                 <img class="h-8" src="./assets/Bangladesh-Railway.png" alt="" />
               </div>
-              <i class="fa-regular fa-heart text-[#5C5C5C]"></i>
+              <i class="fa-regular fa-heart text-[#5C5C5C] small-heart-btn"></i>
             </div>
             <h2
               class="hind-madurai text-[#111111] text-[24px] font-bold mt-4 mb-[2px]"
@@ -377,7 +379,7 @@
             </p>
 
             <div class="flex items-center gap-2 text-center buttons">
-              <button class="btn text-[#5C5C5C] roboto p-4 w-1/2">
+              <button class="btn text-[#5C5C5C] roboto p-4 w-1/2 copy-button">
                 <span class="mr-[6px]"><i class="fa-regular fa-copy"></i></span>
                 Copy
               </button>
@@ -407,5 +409,7 @@
         </div>
       </div>
     </main>
+
+    <script src="./script.js"></script>
   </body>
 </html>
