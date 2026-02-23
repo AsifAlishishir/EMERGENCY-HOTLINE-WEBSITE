@@ -3,7 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Emergency Service Directory – Bangladesh</title>
+
+    <!-- favicon link  -->
+    <link
+      rel="shortcut icon"
+      href="./favicon/icons8-emergency-96.png"
+      type="image/x-icon"
+    />
 
     <!-- font awesome cdn -->
     <link
@@ -27,7 +34,9 @@
   <body>
     <header class="max-w-[1920px] mx-auto top-0 bg-white sticky z-50 shadow-md">
       <nav>
-        <div class="flex justify-between items-center px-[60px] py-6">
+        <div
+          class="flex flex-col md:flex-row gap-y-10 justify-between items-center px-[60px] py-6"
+        >
           <div class="logo-part">
             <div class="flex items-center gap-[10px]">
               <img class="h-[50px]" src="./assets/logo.png" alt="" />
@@ -39,23 +48,35 @@
           </div>
           <div class="flex items-center gap-5 count-part">
             <div
-              class="heart-part flex items-center gap-[10px] py-3 px-7 rounded-[50px] bg-[#41ff6b1a]"
+              class="heart-part flex items-center gap-[6px] md:gap-[10px] p-5 py-2 md:py-3 md:px-7 rounded-[50px] bg-[#41ff6b1a]"
             >
               <span id="heart-total" class="inter font-black text-[#000000]"
                 >0</span
               >
-              <img class="h-[30px]" src="./assets/heart.png" alt="" srcset="" />
+              <img
+                class="h-5 md:h-[30px]"
+                src="./assets/heart.png"
+                alt=""
+                srcset=""
+              />
             </div>
 
             <div
-              class="coin-part flex items-center gap-[10px] py-3 px-7 rounded-[50px] bg-[#41ff6b1a]"
+              class="coin-part flex items-center gap-[6px] md:gap-[10px] p-5 py-2 md:py-3 md:px-7 rounded-[50px] bg-[#41ff6b1a]"
             >
-              <span id="coin-total" class="inter font-black text-[#000000]">100</span>
-              <img class="h-[30px]" src="./assets/coin.png" alt="" srcset="" />
+              <span id="coin-total" class="inter font-black text-[#000000]"
+                >100</span
+              >
+              <img
+                class="h-5 md:h-[30px]"
+                src="./assets/coin.png"
+                alt=""
+                srcset=""
+              />
             </div>
 
             <div
-              class="copy-part flex items-center gap-[10px] inter font-semibold text-white bg-[#00A63E] py-4 px-7 rounded-[50px]"
+              class="copy-part flex items-center gap-[6px] md:gap-[10px] p-5 py-2 md:py-3 md:px-7 inter font-semibold text-white bg-[#00A63E] rounded-[50px]"
             >
               <span id="copy-total">0</span>
               <p>Copy</p>
@@ -69,19 +90,25 @@
         class="banner-part bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] py-12 text-center"
       >
         <img class="h-[92px] mx-auto" src="./assets/logo-dark.png" alt="" />
-        <h2 class="hind-madurai font-semibold text-white text-[40px] my-3">
+        <h2
+          class="hind-madurai font-semibold text-white text-[24px] md:text-[40px] my-5"
+        >
           জরুরি সেবা ডিরেক্টরি
         </h2>
-        <p class="hind-madurai text-[20px] font-semibold text-white">
+        <p
+          class="hind-madurai md:text-[20px] font-semibold text-white px-5 md:px-0"
+        >
           Government Emergency Services at Your Fingertip – A Project by
           Government of the People’s Republic of Bangladesh
         </p>
       </div>
 
       <div
-        class="card-and-call-history-section bg-[#F5FFF6] pt-12 px-[60px] pb-20 flex gap-[30px]"
+        class="card-and-call-history-section bg-[#F5FFF6] pt-12 px-5 lg:px-[60px] pb-20 flex flex-col md:flex-row gap-5 lg:gap-[30px]"
       >
-        <div class="card-container w-[80%] grid grid-cols-3 gap-[30px]">
+        <div
+          class="card-container md:w-[78%] grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-[30px] gap-y-5"
+        >
           <div class="p-8 bg-white shadow-md cursor-pointer card">
             <div class="flex items-center justify-between card-image">
               <div class="p-3 rounded-2xl bg-[#FFE3E2]">
@@ -111,7 +138,9 @@
                 <span class="mr-[6px]"><i class="fa-regular fa-copy"></i></span>
                 Copy
               </button>
-              <button class="btn bg-[#00A63E] p-4 text-white roboto w-1/2 call-button">
+              <button
+                class="btn bg-[#00A63E] p-4 text-white roboto w-1/2 call-button"
+              >
                 <span class="mr-[6px]"><i class="fa-solid fa-phone"></i></span
                 >Call
               </button>
@@ -144,7 +173,9 @@
                 <span class="mr-[6px]"><i class="fa-regular fa-copy"></i></span>
                 Copy
               </button>
-              <button class="btn bg-[#00A63E] p-4 text-white roboto w-1/2 call-button">
+              <button
+                class="btn bg-[#00A63E] p-4 text-white roboto w-1/2 call-button"
+              >
                 <span class="mr-[6px]"><i class="fa-solid fa-phone"></i></span
                 >Call
               </button>
@@ -177,7 +208,9 @@
                 <span class="mr-[6px]"><i class="fa-regular fa-copy"></i></span>
                 Copy
               </button>
-              <button class="btn bg-[#00A63E] p-4 text-white roboto w-1/2 call-button">
+              <button
+                class="btn bg-[#00A63E] p-4 text-white roboto w-1/2 call-button"
+              >
                 <span class="mr-[6px]"><i class="fa-solid fa-phone"></i></span
                 >Call
               </button>
@@ -210,7 +243,9 @@
                 <span class="mr-[6px]"><i class="fa-regular fa-copy"></i></span>
                 Copy
               </button>
-              <button class="btn bg-[#00A63E] p-4 text-white roboto w-1/2 call-button">
+              <button
+                class="btn bg-[#00A63E] p-4 text-white roboto w-1/2 call-button"
+              >
                 <span class="mr-[6px]"><i class="fa-solid fa-phone"></i></span
                 >Call
               </button>
@@ -245,7 +280,9 @@
                 <span class="mr-[6px]"><i class="fa-regular fa-copy"></i></span>
                 Copy
               </button>
-              <button class="btn bg-[#00A63E] p-4 text-white roboto w-1/2 call-button">
+              <button
+                class="btn bg-[#00A63E] p-4 text-white roboto w-1/2 call-button"
+              >
                 <span class="mr-[6px]"><i class="fa-solid fa-phone"></i></span
                 >Call
               </button>
@@ -280,7 +317,9 @@
                 <span class="mr-[6px]"><i class="fa-regular fa-copy"></i></span>
                 Copy
               </button>
-              <button class="btn bg-[#00A63E] p-4 text-white roboto w-1/2 call-button">
+              <button
+                class="btn bg-[#00A63E] p-4 text-white roboto w-1/2 call-button"
+              >
                 <span class="mr-[6px]"><i class="fa-solid fa-phone"></i></span
                 >Call
               </button>
@@ -315,7 +354,9 @@
                 <span class="mr-[6px]"><i class="fa-regular fa-copy"></i></span>
                 Copy
               </button>
-              <button class="btn bg-[#00A63E] p-4 text-white roboto w-1/2 call-button">
+              <button
+                class="btn bg-[#00A63E] p-4 text-white roboto w-1/2 call-button"
+              >
                 <span class="mr-[6px]"><i class="fa-solid fa-phone"></i></span
                 >Call
               </button>
@@ -348,7 +389,9 @@
                 <span class="mr-[6px]"><i class="fa-regular fa-copy"></i></span>
                 Copy
               </button>
-              <button class="btn bg-[#00A63E] p-4 text-white roboto w-1/2 call-button">
+              <button
+                class="btn bg-[#00A63E] p-4 text-white roboto w-1/2 call-button"
+              >
                 <span class="mr-[6px]"><i class="fa-solid fa-phone"></i></span
                 >Call
               </button>
@@ -383,7 +426,9 @@
                 <span class="mr-[6px]"><i class="fa-regular fa-copy"></i></span>
                 Copy
               </button>
-              <button class="btn bg-[#00A63E] p-4 text-white roboto w-1/2 call-button">
+              <button
+                class="btn bg-[#00A63E] p-4 text-white roboto w-1/2 call-button"
+              >
                 <span class="mr-[6px]"><i class="fa-solid fa-phone"></i></span
                 >Call
               </button>
@@ -391,21 +436,24 @@
           </div>
         </div>
         <div
-          class="bg-white call-history-container w-[20%] p-6 rounded-xl shadow-md"
+          class="bg-white call-history-container md:w-[22%] p-3 lg:p-6 rounded-xl shadow-md"
         >
-          <div class="flex items-center justify-between">
-            <p class="roboto text-[20px] text-[#111111] font-medium">
+          <div class="flex items-center justify-between mb-8">
+            <p class="roboto lg:text-[20px] text-[#111111] font-medium">
               <span class="mr-2"
                 ><i class="fa-regular fa-clock text-[#5C5C5C]"></i></span
               >Call History
             </p>
 
             <button
-              class="btn bg-[#00A63E] rounded-[50px] text-white px-8 py-5 inter font-semibold"
+              id="clear-button"
+              class="btn bg-[#00A63E] rounded-[50px] text-white lg:px-6 lg:py-6 inter font-semibold"
             >
               Clear
             </button>
           </div>
+
+          <div id="call-history-container"></div>
         </div>
       </div>
     </main>
