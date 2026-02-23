@@ -48,6 +48,7 @@ This project allows users to:
 ---
 
 ## 📂 Project Structure
+```
 Bangladesh-Emergency-Service-Directory/
 │
 ├── index.html
@@ -65,7 +66,7 @@ Bangladesh-Emergency-Service-Directory/
 ├── Bangladesh-Railway.png
 ├── coin.png
 └── heart.png
-
+```
 
 
 ---
